@@ -18,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CTRLLISTComponent } from './CRTL_F/ctrl-list/ctrl-list.component';
 import { CrtlFormComponent } from './CRTL_F/crtl-form/crtl-form.component';
 import { FormsModule } from '@angular/forms';
+<<<<<<< HEAD
 import { MetaListComponent } from './meta/meta-list/meta-list.component';
 import { LancamentoListComponent } from './lancamento/lancamento-list/lancamento-list.component';
 import { MetaFormComponent } from './meta/meta-form/meta-form.component';
@@ -29,6 +30,8 @@ import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.co
 // import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.component';
 
 
+=======
+>>>>>>> e41c02d98adc0cb818e814514bf5c846678222d9
 
 @NgModule({
   declarations: [
@@ -37,6 +40,7 @@ import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.co
     MainMenuComponent,
     MainFooterComponent,
      CrtlFormComponent,
+<<<<<<< HEAD
     CTRLLISTComponent,
     MetaListComponent,
     LancamentoListComponent,
@@ -47,6 +51,9 @@ import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.co
     PositivoFormComponent
     // PositivoListComponent,
     // PositivoFormComponent
+=======
+    CTRLLISTComponent
+>>>>>>> e41c02d98adc0cb818e814514bf5c846678222d9
    
   ],
   imports: [
@@ -56,7 +63,10 @@ import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.co
     BrowserAnimationsModule,
     HttpClientModule,
     FormsModule
+<<<<<<< HEAD
     // NgxMaskModule.forRoot() 
+=======
+>>>>>>> e41c02d98adc0cb818e814514bf5c846678222d9
   ],
   providers: [
      ],

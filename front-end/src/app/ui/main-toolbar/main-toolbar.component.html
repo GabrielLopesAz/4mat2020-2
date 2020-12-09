@@ -1,6 +1,6 @@
 <mat-toolbar color="primary" class="mat-elevation-z8">
     <app-main-menu></app-main-menu>
-    <span>{{appName}}</span>
+    <a [routerLink]="['/']" style="text-decoration: none; color: #FFFFFF;">{{ appName }}</a>
     <span class="example-spacer"></span>
     <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
       <mat-icon>favorite</mat-icon>

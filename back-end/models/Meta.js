@@ -20,7 +20,7 @@ const esquema = mongoose.Schema({
     valor_Gasto:{
         type:Number,
         required:true,
-        min:0
+        dafault:0
     },
     mes:{
         type: Number,

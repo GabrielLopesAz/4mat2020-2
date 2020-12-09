@@ -17,9 +17,8 @@ const esquema = mongoose.Schema({
         default:`${data.getDate()}/${(data.getMonth()+1)}/${data.getFullYear()}`
     },
     categoriaReceita:{
-        type:String,
+       type: mongoose.ObjectId,ref:'Categoria',
         required:true,
-        enum:['Salario','Transferencia','Outros'],
         default:'Outros'
     },
     controleReceita:{

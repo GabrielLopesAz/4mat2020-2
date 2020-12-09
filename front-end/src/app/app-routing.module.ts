@@ -8,6 +8,7 @@ import { MetaFormComponent } from './meta/meta-form/meta-form.component';
 import { DespesaListComponent } from './despesa/despesa-list/despesa-list.component';
 import { DespesaFormComponent } from './despesa/despesa-form/despesa-form.component';
 import { PositivoListComponent } from './positivo/positivo-list/positivo-list.component';
+import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.component';
 // import { PositivoListComponent } from './positivo/positivo-list/positivo-list.component';
 // import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.component'; 
 
@@ -25,7 +26,9 @@ const routes: Routes = [
     {path:'despesa/novo',component:DespesaFormComponent},
     {path:'despesa/:id',component:DespesaFormComponent},
 
-     {path:'positivo',component:PositivoListComponent} ,  
+     {path:'positivo',component:PositivoListComponent} ,
+     {path:'positivo/novo',component:PositivoFormComponent},
+     {path:'positivo/:id',component:PositivoFormComponent},
 
     {path:'lancamento', component: LancamentoListComponent}
 ];

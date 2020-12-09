@@ -1,5 +1,11 @@
+// Bem no início do arquivo app.module.ts
+// import { NgxMaskModule, IConfig } from 'ngx-mask'
+// export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
+
+
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,21 +14,52 @@ import { MaterialModule } from './material/material.module';
 import { MainToolbarComponent } from './ui/main-toolbar/main-toolbar.component';
 import { MainMenuComponent } from './ui/main-menu/main-menu.component';
 import { MainFooterComponent } from './ui/main-footer/main-footer.component';
+import { HttpClientModule } from '@angular/common/http';
+import { CTRLLISTComponent } from './CRTL_F/ctrl-list/ctrl-list.component';
+import { CrtlFormComponent } from './CRTL_F/crtl-form/crtl-form.component';
+import { FormsModule } from '@angular/forms';
+import { MetaListComponent } from './meta/meta-list/meta-list.component';
+import { LancamentoListComponent } from './lancamento/lancamento-list/lancamento-list.component';
+import { MetaFormComponent } from './meta/meta-form/meta-form.component';
+import { DespesaListComponent } from './despesa/despesa-list/despesa-list.component';
+import { DespesaFormComponent } from './despesa/despesa-form/despesa-form.component';
+import { PositivoListComponent } from './positivo/positivo-list/positivo-list.component';
+import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.component';
+// import { PositivoListComponent } from './positivo/positivo-list/positivo-list.component';
+// import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     MainToolbarComponent,
     MainMenuComponent,
-    MainFooterComponent
+    MainFooterComponent,
+     CrtlFormComponent,
+    CTRLLISTComponent,
+    MetaListComponent,
+    LancamentoListComponent,
+    MetaFormComponent,
+    DespesaListComponent,
+    DespesaFormComponent,
+    PositivoListComponent,
+    PositivoFormComponent
+    // PositivoListComponent,
+    // PositivoFormComponent
+   
   ],
   imports: [
     MaterialModule,  
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule,
+    FormsModule
+    // NgxMaskModule.forRoot() 
   ],
-  providers: [],
+  providers: [
+     ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

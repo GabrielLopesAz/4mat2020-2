@@ -13,13 +13,16 @@ const metaRouter =require('./routes/meta')
 const despesaRouter=require('./routes/despesa')
 
 const db = require('./config/database')
-const dbUser = process.env.DB_USER
+const dbUser = process.env.DB_USER 
 const dbName = process.env.DB_NAME
 const dbPass = process.env.DB_PASS
 db(`mongodb+srv://${dbUser}:${dbPass}@cluster0.p6dwo.gcp.mongodb.net/DB_PROJETO?retryWrites=true&w=majority`)
 
 var app = express();
-f
+
+const cors = require('cors'); /* O  que permite a comunicação do servidor do front end com o do backend*/
+app.use(cors());
+
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');

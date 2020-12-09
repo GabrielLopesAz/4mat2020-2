@@ -1,0 +1,60 @@
+<h1>{{title}}</h1>
+
+<form class="std-form" #f="ngForm" (ngSubmit)="salvar(f)">
+<!-- botão de salvar o formulario -->
+
+<!-- Modo para usar no form entidades relacionadas -->
+    <mat-form-field>
+    <mat-label>Categoria</mat-label>
+      <mat-select name="categoria" [(ngModel)]="meta.categoria" required>
+        <mat-option *ngFor="let categoria of categorias" [value]="categoria._id">
+          {{ categoria.nome }}
+        </mat-option>
+      </mat-select>
+  </mat-form-field>
+
+    <mat-form-field >
+    <mat-label>Meta de gasto</mat-label>
+    <input input= "val_def" [(ngModel)] ="meta.valor_Def" name="meta"matInput required type="number" >  
+   
+  </mat-form-field>
+  <mat-form-field >
+    <mat-label>Valor gasto</mat-label>
+    <input input= "val_gasto" [(ngModel)] ="meta.valor_Gasto" name="meta"matInput   type="number" readonly  >  
+   
+  </mat-form-field>
+
+ <mat-form-field>
+    <mat-label>Mes</mat-label>
+    <mat-select name="meses" [(ngModel)]="meta.mes" required>
+      <mat-option value="1">1</mat-option>
+      <mat-option value="2">2</mat-option>
+      <mat-option value="3">3</mat-option >
+      <mat-option value="4">4</mat-option>
+      <mat-option value="5">5</mat-option>
+      <mat-option value="6">6</mat-option >
+      <mat-option value="7">7</mat-option>
+      <mat-option value="8">8</mat-option>
+      <mat-option value="9">9</mat-option >
+      <mat-option value="10">10</mat-option>
+      <mat-option value="11">11</mat-option>
+      <mat-option value="12">12</mat-option >
+  
+    </mat-select>
+ </mat-form-field>
+
+
+
+
+   <mat-toolbar class="form-buttons">
+    <mat-toolbar-row>
+      <button mat-raised-button type="submit" color="accent">
+        Salvar
+      </button>
+      <button mat-raised-button type="button" (click)="voltar(f)">
+        Voltar
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+</form>

@@ -1,5 +1,8 @@
 <button mat-button [matMenuTriggerFor]="menu"> <mat-icon>menu</mat-icon></button>
 <mat-menu #menu="matMenu">
-  <button mat-menu-item>Item 1</button>
-  <button mat-menu-item>Item 2</button>
+  <a [routerLink]="['/categoria']" mat-menu-item>Categorias</a>
+    <a [routerLink]="['/meta']" mat-menu-item>Metas</a>
+      <a [routerLink]="['/despesa']" mat-menu-item>Despesas</a>
+      <a [routerLink]="['/positivo']" mat-menu-item>Receitas</a>
+    <!-- <a [routerLink]="['/lancamento']" mat-menu-item>Lancamento</a> -->
 </mat-menu>

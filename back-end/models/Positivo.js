@@ -33,6 +33,6 @@ const esquema = mongoose.Schema({
 3-o nome da coleçao/tabela no bd que vai receber os objetos
 */ 
 
-module.exports = mongoose.model('Positivo',esquema,'positivos')
+module.exports = mongoose.model('Positivo',esquema,'Lancamentos')
 
 

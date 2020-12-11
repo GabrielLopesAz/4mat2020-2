@@ -4,12 +4,15 @@ import { CTRLLISTComponent } from './CRTL_F/ctrl-list/ctrl-list.component';
 import { CrtlFormComponent } from './CRTL_F/crtl-form/crtl-form.component';
  
 import { MetaListComponent } from './meta/meta-list/meta-list.component';
-import { LancamentoListComponent } from './lancamento/lancamento-list/lancamento-list.component';
+// import { LancamentoListComponent } from './lancamento/lancamento-list/lancamento-list.component';
 import { MetaFormComponent } from './meta/meta-form/meta-form.component';
 import { DespesaListComponent } from './despesa/despesa-list/despesa-list.component';
 import { DespesaFormComponent } from './despesa/despesa-form/despesa-form.component';
 import { PositivoListComponent } from './positivo/positivo-list/positivo-list.component';
 import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.component';
+import { AlertaListComponent } from './alerta/alerta-list/alerta-list.component';
+import { AlertaFormComponent } from './alerta/alerta-form/alerta-form.component';
+ 
 // import { PositivoListComponent } from './positivo/positivo-list/positivo-list.component';
 // import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.component'; 
 
@@ -31,7 +34,12 @@ const routes: Routes = [
      {path:'positivo/novo',component:PositivoFormComponent},
      {path:'positivo/:id',component:PositivoFormComponent},
 
-    {path:'lancamento', component: LancamentoListComponent}
+     {path:'alerta',component:AlertaListComponent},
+     {path:'alerta/novo', component:AlertaFormComponent},
+     {path:'alerta/:id', component:AlertaFormComponent}
+
+    // {path:'lancamento', component: LancamentoListComponent},
+
 
 ]
 

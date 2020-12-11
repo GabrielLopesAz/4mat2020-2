@@ -32,7 +32,7 @@ const esquema = mongoose.Schema({
 2- a constante do SCHEMA A esquema
 3-o nome da coleçao/tabela no bd que vai receber os objetos
 */
-module.exports = mongoose.model('Despesa',esquema,'despesas')
+module.exports = mongoose.model('Despesa',esquema,'Lancamentos')
 
 
  

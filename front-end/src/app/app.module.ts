@@ -20,16 +20,15 @@ import { CrtlFormComponent } from './CRTL_F/crtl-form/crtl-form.component';
 import { FormsModule } from '@angular/forms';
 
 import { MetaListComponent } from './meta/meta-list/meta-list.component';
-import { LancamentoListComponent } from './lancamento/lancamento-list/lancamento-list.component';
+// import { LancamentoListComponent } from './lancamento/lancamento-list/lancamento-list.component';
 import { MetaFormComponent } from './meta/meta-form/meta-form.component';
 import { DespesaListComponent } from './despesa/despesa-list/despesa-list.component';
 import { DespesaFormComponent } from './despesa/despesa-form/despesa-form.component';
 import { PositivoListComponent } from './positivo/positivo-list/positivo-list.component';
 import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.component';
-import { AboutUsComponent } from './about/about-us/about-us.component';
-// import { PositivoListComponent } from './positivo/positivo-list/positivo-list.component';
-// import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.component';
-
+import { AlertaListComponent } from './alerta/alerta-list/alerta-list.component';
+import { AlertaFormComponent } from './alerta/alerta-form/alerta-form.component';
+ 
 
 
 @NgModule({
@@ -42,18 +41,14 @@ import { AboutUsComponent } from './about/about-us/about-us.component';
  
     CTRLLISTComponent,
     MetaListComponent,
-    LancamentoListComponent,
     MetaFormComponent,
     DespesaListComponent,
     DespesaFormComponent,
     PositivoListComponent,
     PositivoFormComponent,
-    AboutUsComponent
-    // PositivoListComponent,
-    // PositivoFormComponent
-
-    // CTRLLISTComponent
-
+    AlertaListComponent,
+    AlertaFormComponent 
+ 
   ],
   imports: [
     MaterialModule,  

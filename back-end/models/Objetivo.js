@@ -6,17 +6,20 @@ const esquema = mongoose.Schema({
        required:true,
        index:{unique:true}
    },  
-   descrição:{
+   descricao:{
        type:String
        
    },
-    tipo:{
-       type:String,
+    categoria:{
+       type: mongoose.ObjectId,ref:'Categoria',
        required:true      
    },
-     tipo:{
+     objetivo:{
        type:Number       
-   }
+   },
+    atual:{
+       type:Number       
+   } 
 
     
 })

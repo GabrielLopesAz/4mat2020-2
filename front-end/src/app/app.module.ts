@@ -28,6 +28,10 @@ import { PositivoListComponent } from './positivo/positivo-list/positivo-list.co
 import { PositivoFormComponent } from './positivo/positivo-form/positivo-form.component';
 import { AlertaListComponent } from './alerta/alerta-list/alerta-list.component';
 import { AlertaFormComponent } from './alerta/alerta-form/alerta-form.component';
+import { ObjetivoListComponent } from './objetivo/objetivo-list/objetivo-list.component';
+import { ObjetivoFormComponent } from './objetivo/objetivo-form/objetivo-form.component';
+import { BancoListComponent } from './banco/banco-list/banco-list.component';
+import { BancoFormComponent } from './banco/banco-form/banco-form.component';
  
 
 
@@ -47,7 +51,11 @@ import { AlertaFormComponent } from './alerta/alerta-form/alerta-form.component'
     PositivoListComponent,
     PositivoFormComponent,
     AlertaListComponent,
-    AlertaFormComponent 
+    AlertaFormComponent,
+    ObjetivoListComponent,
+    ObjetivoFormComponent,
+    BancoListComponent,
+    BancoFormComponent 
  
   ],
   imports: [

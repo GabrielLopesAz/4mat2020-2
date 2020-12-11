@@ -7,8 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 
 const lancamentoRouter = require('./routes/lancamento')
-const categoriarouter = require('./routes/categoria');
-const categoria2router = require('./routes/catpositivo');
+const categoriarouter = require('./routes/categoria'); 
 const receitarouter = require('./routes/positivo')
 const metaRouter = require('./routes/meta');
 const contaRouter = require('./routes/conta');
@@ -47,8 +46,7 @@ app.use('/banco', bancoRouter);
 //rota para metas
 app.use('/meta', metaRouter);
 app.use('/objetivo', objetivoRouter);
-//rota para a categoria
-app.use('/categoria2', categoria2router);
+//rota para a categoria 
 app.use('/categoria', categoriarouter);
 //rota para receita 
 app.use('/positivo', receitarouter);

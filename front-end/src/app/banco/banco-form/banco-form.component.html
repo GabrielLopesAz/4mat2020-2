@@ -1,0 +1,31 @@
+<h1>{{title}}</h1>
+
+<form class="std-form" #f="ngForm" (ngSubmit)="salvar(f)">
+<!-- botão de salvar o formulario -->
+     <mat-form-field >
+    <mat-label>Sigla da banco</mat-label>
+    <input input= "sigla" [(ngModel)] ="banco.sigla" name="nome" matInput required >  
+  </mat-form-field>
+
+     <mat-form-field >
+    <mat-label>Nome da banco</mat-label>
+    <input input= "nome" [(ngModel)] ="banco.nome" name="nome" matInput required >  
+  </mat-form-field>
+  
+   <mat-form-field >
+    <mat-label>codigo banco</mat-label>
+    <input input= "codigo" [(ngModel)] ="banco.codigo" name="nome" matInput required  >  
+  </mat-form-field>
+
+   <mat-toolbar class="form-buttons">
+    <mat-toolbar-row>
+      <button mat-raised-button type="submit" color="accent">
+        Salvar
+      </button>
+      <button mat-raised-button type="button" (click)="voltar(f)">
+        Voltar
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+</form>

@@ -6,6 +6,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+// Na seção de imports do app.module.ts
+// Habilitar formatação de moeda e data em português
+import { registerLocaleData } from '@angular/common';
+import localePt from '@angular/common/locales/pt';
+registerLocaleData(localePt);
+import { MatMomentDateModule, MAT_MOMENT_DATE_FORMATS, MAT_MOMENT_DATE_ADAPTER_OPTIONS } from '@angular/material-moment-adapter';
+import { MAT_DATE_LOCALE, MAT_DATE_FORMATS } from '@angular/material/core';
+ 
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +40,10 @@ import { ObjetivoListComponent } from './objetivo/objetivo-list/objetivo-list.co
 import { ObjetivoFormComponent } from './objetivo/objetivo-form/objetivo-form.component';
 import { BancoListComponent } from './banco/banco-list/banco-list.component';
 import { BancoFormComponent } from './banco/banco-form/banco-form.component';
+import { ContaListComponent } from './conta/conta-list/conta-list.component';
+import { ContaFormComponent } from './conta/conta-form/conta-form.component';
+import { LancamentoListComponent } from './lancamento/lancamento-list/lancamento-list.component';
+import { LancamentoFormComponent } from './lancamento/lancamento-form/lancamento-form.component';
  
 
 
@@ -42,7 +54,6 @@ import { BancoFormComponent } from './banco/banco-form/banco-form.component';
     MainMenuComponent,
     MainFooterComponent,
      CrtlFormComponent,
- 
     CTRLLISTComponent,
     MetaListComponent,
     MetaFormComponent,
@@ -55,7 +66,11 @@ import { BancoFormComponent } from './banco/banco-form/banco-form.component';
     ObjetivoListComponent,
     ObjetivoFormComponent,
     BancoListComponent,
-    BancoFormComponent 
+    BancoFormComponent,
+    ContaListComponent,
+    ContaFormComponent,
+    LancamentoListComponent,
+    LancamentoFormComponent 
  
   ],
   imports: [
@@ -64,12 +79,19 @@ import { BancoFormComponent } from './banco/banco-form/banco-form.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    MatMomentDateModule
  
     // NgxMaskModule.forRoot() 
  
   ],
   providers: [
+      // No app.module.ts, dentro seção providers
+  /**** Datas em português no MatDatepicker  ****/
+    { provide: MAT_DATE_LOCALE, useValue: 'pt-BR' },
+    { provide: MAT_DATE_FORMATS, useValue: MAT_MOMENT_DATE_FORMATS},
+    { provide: MAT_MOMENT_DATE_ADAPTER_OPTIONS, useValue: {useUtc: true}}
+  /**********************************************/  
      ],
   bootstrap: [AppComponent]
 })

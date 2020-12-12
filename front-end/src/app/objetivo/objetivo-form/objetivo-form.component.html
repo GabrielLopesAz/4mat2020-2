@@ -4,17 +4,18 @@
 <!-- botão de salvar o formulario -->
 
 <!-- Modo para usar no form entidades relacionadas -->
-  <mat-form-field >
-    <mat-label>nome</mat-label>
-    <input input= "nome" [(ngModel)] ="objetivo.nome" name="objetivo"matInput required  >  
-  </mat-form-field>
-    
-  <mat-form-field >
-    <mat-label>descricao</mat-label>
-    <input input= "descricao" [(ngModel)] ="objetivo.descricao" name="objetivo"matInput required  >  
-  </mat-form-field>
-    
 
+ <mat-form-field>
+    <mat-label>Nome </mat-label>
+    <input name="nome" [(ngModel)]="objetivo.nome" matInput required
+    >
+  </mat-form-field>
+   <mat-form-field>
+    <mat-label>descricao</mat-label>
+    <input name="descricao" [(ngModel)]="objetivo.descricao" matInput required
+     >
+  </mat-form-field>
+ 
 <mat-form-field>
     <mat-label>Categoria</mat-label>
       <mat-select name="categoria" [(ngModel)]="objetivo.categoria" required>
@@ -24,21 +25,17 @@
       </mat-select>
   </mat-form-field>
 
-    <mat-form-field >
+     <mat-form-field>
     <mat-label>Objetivo</mat-label>
-    <input input= "objetivo" [(ngModel)] ="objetivo.objetivo" name="objetivo"matInput required type="number" >  
+    <input name="objetivo" [(ngModel)]="objetivo.objetivo" matInput required
+     type="number">
   </mat-form-field>
-
-  <mat-form-field >
+  
+      <mat-form-field>
     <mat-label>Valor Guardado</mat-label>
-    <input input= "atual" [(ngModel)] ="objetivo.atual" name="objetivo"matInput   type="number"   >  
-   
+    <input name="atual" [(ngModel)]="objetivo.atual" matInput required
+      type="number">
   </mat-form-field>
-
-
-
-
-
 
    <mat-toolbar class="form-buttons">
     <mat-toolbar-row>

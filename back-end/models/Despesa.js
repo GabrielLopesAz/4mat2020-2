@@ -17,12 +17,15 @@ const esquema = mongoose.Schema({
     },
     categoria:{
         type: mongoose.ObjectId,ref:'Categoria',
-        required:true,
-        default:'Outros'
+        required:true 
+    },
+    conta:{
+         type: mongoose.ObjectId,ref:'Conta',
+         required:true
     },
     controle:{
         type:String,
-        default:'Despesa'
+        enum:['Receita','Despesa'] 
     }
 })
 /*,index{unique:true} > deixe jeito fica unico */

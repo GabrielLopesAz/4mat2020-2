@@ -14,6 +14,10 @@ import { ObjetivoListComponent } from './objetivo/objetivo-list/objetivo-list.co
 import { ObjetivoFormComponent } from './objetivo/objetivo-form/objetivo-form.component';
 import { BancoListComponent } from './banco/banco-list/banco-list.component';
 import { BancoFormComponent } from './banco/banco-form/banco-form.component';
+import { ContaListComponent } from './conta/conta-list/conta-list.component';
+import { ContaFormComponent } from './conta/conta-form/conta-form.component';
+import { LancamentoListComponent } from './lancamento/lancamento-list/lancamento-list.component';
+import { LancamentoFormComponent } from './lancamento/lancamento-form/lancamento-form.component';
 
 /* Criação das rotas para ligação front com back */
 const routes: Routes = [ 
@@ -45,7 +49,13 @@ const routes: Routes = [
      {path:'banco/novo', component:BancoFormComponent},
      {path:'banco/:id', component: BancoFormComponent},
 
-    // {path:'lancamento', component: LancamentoListComponent},
+     {path:'conta', component:ContaListComponent},
+     {path:'conta/novo', component: ContaFormComponent },
+     {path:'conta/:id', component:ContaFormComponent  },
+
+    {path:'lancamento', component: LancamentoListComponent},
+    {path:'lancamento/novo', component: LancamentoFormComponent},
+    {path:'lancamento/:id', component: LancamentoFormComponent}
 
 
 ]

@@ -23,7 +23,7 @@ export class ContaFormComponent implements OnInit {
 		
 		
     //variaveis para arnazenar as listagens de entidades relacionadas
-    descricoes:any=[] // final no plural para vetor
+    bancos:any=[] // final no plural para vetor
     
 			
 		
@@ -32,7 +32,7 @@ export class ContaFormComponent implements OnInit {
         
 
   constructor(
-      private descricoesSrv:BancoService,
+      private bancosSrv:BancoService,
       private contaSrv: ContaService,
       private snackBar:MatSnackBar,
       private location:Location,
@@ -56,7 +56,8 @@ export class ContaFormComponent implements OnInit {
     }
     // carregar as listagens de entidades relacionadas
     try{
-        this.descricoes = await this.contaSrv.listar()
+        this.bancos = await this.bancosSrv.listar()
+        console.log(this.bancos)
     }catch(erro){
          console.error(erro)
             this.snackBar.open('Erro ao carregar os dados','OK',{duration:5000})

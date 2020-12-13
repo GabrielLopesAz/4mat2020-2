@@ -14,8 +14,7 @@ const contaRouter = require('./routes/conta');
 const bancoRouter = require('./routes/banco');
 const objetivoRouter = require('./routes/objetivo')
 const despesaRouter = require('./routes/despesa')
-const alertaRouter = require('./routes/alerta')
-const sobreRouter = require('./routes/sobre-nos')
+const alertaRouter = require('./routes/alerta') 
 
 const db = require('./config/database')
 const dbUser = process.env.DB_USER
@@ -38,9 +37,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/aboutUs', sobreRouter);
-
+app.use('/', indexRouter); 
 app.use('/conta', contaRouter);
 
 app.use('/banco', bancoRouter);

@@ -19,7 +19,7 @@ constructor(private alertaSrv:AlertaService,
   async ngOnInit() {
        this.alertas = await this.alertaSrv.listar()
        console.log(this.alertas)
-
+/*
 //validação das datas 
  const repeticao = 2;
 const date = new Date()
@@ -46,7 +46,7 @@ console.log("--------------Pré IF-------------------")
         
 
 } while (repeticao < 1);
-  
+  */
 
   }
     async excluir(id:string){

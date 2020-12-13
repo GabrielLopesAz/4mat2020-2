@@ -6,14 +6,14 @@
 <!-- Modo para usar no form entidades relacionadas -->
    <mat-form-field>
     <mat-label>Nome</mat-label>
-    <input name="Nome" [(ngModel)]="conta.nome" matInput required>
+    <input name="nome" [(ngModel)]="conta.nome" matInput required>
   </mat-form-field>
  
-<mat-form-field>
-    <mat-label>conta</mat-label>
-      <mat-select name="conta" [(ngModel)]="conta.descricao"  >
-        <mat-option *ngFor="let descricao of descricoes" [value]="conta._id">
-          {{ descricao.nome }}
+ <mat-form-field>
+    <mat-label>Conta</mat-label>
+      <mat-select name="conta" [(ngModel)]="conta.descricao" >
+        <mat-option *ngFor="let banco of bancos" [value]="banco._id">
+          {{ banco.nome }}
         </mat-option>
       </mat-select>
   </mat-form-field>

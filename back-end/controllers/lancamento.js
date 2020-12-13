@@ -23,8 +23,8 @@ controller.listar = async (req, res) => {
         //await Curso.find() // sem parametros retorna tudo
 
         let dados = await Lancamento.find()
-        .populate('nomeDespesa').sort('data')
-        .populate('nomePositivo').sort('dataReceita')
+        .populate('categoria').sort('data')
+        .populate('conta').sort('data')
             
         res.send(dados)//vai com status http 200: ok  200 = padrão
     } catch (erro) {

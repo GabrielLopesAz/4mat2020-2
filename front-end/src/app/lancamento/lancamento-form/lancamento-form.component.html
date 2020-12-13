@@ -31,12 +31,13 @@
     <input  [(ngModel)] ="lancamento.valor" name="lancamento"matInput required type="number" >  
     </mat-form-field>
 
-<mat-form-field color="accent" appearance="fill">
-  <mat-label>Data</mat-label>
-  <input matInput [matDatepicker]="data">
-  <mat-datepicker-toggle matSuffix [for]="data"></mat-datepicker-toggle>
-  <mat-datepicker #data color="primary"></mat-datepicker>
-</mat-form-field>
+
+  <mat-form-field >
+    <mat-label>Data</mat-label>
+    <input  [(ngModel)] ="lancamento.data" name="lancamento"matInput      >  
+   
+  </mat-form-field>
+
  <mat-form-field>
     <mat-label>Tipo</mat-label>
     <mat-select name="meses" [(ngModel)]="lancamento.controle" required>

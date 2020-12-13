@@ -1,16 +1,10 @@
  
 <h1>lancamentos</h1>
-
-<mat-toolbar class="new-item">
-  <a mat-raised-button color="accent" [routerLink]="['/positivo/novo']">
-    <mat-icon>add_circle</mat-icon>
-    Nova Receita
-  </a>
-</mat-toolbar>
+ 
 <mat-toolbar class="new-item">
   <a mat-raised-button color="accent" [routerLink]="['/lancamento/novo']">
     <mat-icon>add_circle</mat-icon>
-    Nova lancamento
+    Novo lancamento
   </a>
 </mat-toolbar>
 <table mat-table [dataSource]="lancamentos" matSort class="mat-elevation-z4">

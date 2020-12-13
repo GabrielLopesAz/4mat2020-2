@@ -44,6 +44,7 @@ import { ContaListComponent } from './conta/conta-list/conta-list.component';
 import { ContaFormComponent } from './conta/conta-form/conta-form.component';
 import { LancamentoListComponent } from './lancamento/lancamento-list/lancamento-list.component';
 import { LancamentoFormComponent } from './lancamento/lancamento-form/lancamento-form.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos/sobre-nos.component';
  
 
 
@@ -70,7 +71,8 @@ import { LancamentoFormComponent } from './lancamento/lancamento-form/lancamento
     ContaListComponent,
     ContaFormComponent,
     LancamentoListComponent,
-    LancamentoFormComponent 
+    LancamentoFormComponent,
+    SobreNosComponent 
  
   ],
   imports: [

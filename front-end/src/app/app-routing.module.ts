@@ -18,6 +18,7 @@ import { ContaListComponent } from './conta/conta-list/conta-list.component';
 import { ContaFormComponent } from './conta/conta-form/conta-form.component';
 import { LancamentoListComponent } from './lancamento/lancamento-list/lancamento-list.component';
 import { LancamentoFormComponent } from './lancamento/lancamento-form/lancamento-form.component';
+import { SobreNosComponent } from './sobre-nos/sobre-nos/sobre-nos.component';
 
 /* Criação das rotas para ligação front com back */
 const routes: Routes = [ 
@@ -55,9 +56,9 @@ const routes: Routes = [
 
     {path:'lancamento', component: LancamentoListComponent},
     {path:'lancamento/novo', component: LancamentoFormComponent},
-    {path:'lancamento/:id', component: LancamentoFormComponent}
+    {path:'lancamento/:id', component: LancamentoFormComponent},
 
-
+    {path:'aboutUs', component:SobreNosComponent}
 ]
 
 /* Criação das rotas para ligação front com back */

@@ -2,7 +2,6 @@
 // import { NgxMaskModule, IConfig } from 'ngx-mask'
 // export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
-
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -72,7 +71,8 @@ import { SobreNosComponent } from './sobre-nos/sobre-nos/sobre-nos.component';
     ContaFormComponent,
     LancamentoListComponent,
     LancamentoFormComponent,
-    SobreNosComponent 
+    SobreNosComponent
+    // NgxMaskModule.forRoot()
  
   ],
   imports: [
